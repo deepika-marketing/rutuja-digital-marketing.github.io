@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Agency Name</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #333;
+        }
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #1f3c88;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .primary-btn {
+            background: #1f3c88;
+            color: white;
+        }
+
+        .secondary-btn {
+            background: white;
+            border: 2px solid #1f3c88;
+            color: #1f3c88;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 90px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
+
+        /* Cards */
+
+        .service-container,
+        .steps,
+        .case-container,
+        .testimonial-container {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card,
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            min-width: 280px;
+            flex: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3,
+        .step h3 {
+            margin-bottom: 15px;
+            color: #1f3c88;
+        }
+
+        /* Industries */
+
+        .industry-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .industry-list span {
+            background: #1f3c88;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+        }
+
+        /* Contact */
+
+        .contact-form {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background: #1f3c88;
+            color: white;
+        }
+
+        footer {
+            background: #1f3c88;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">Your Agency</div>
+
+        <ul class="nav-links">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Services</a></li>
+
+            <li><a href="#">Industries</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Helping Businesses Turn Marketing Into Measurable Growth</h1>
+
+            <p>
+                We help businesses generate leads, optimize customer acquisition,
+                and build scalable marketing systems.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn">
+                    Book a Free Consultation
+                </button>
+
+                <button class="secondary-btn">
+                    View Case Studies
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+
+    <section>
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="card">
+
+                <h3>Performance Marketing</h3>
+
+                <p>
+                    Google Ads, Meta Ads, LinkedIn campaigns and conversion optimization.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Lead Generation</h3>
+
+                <p>
+                    Email marketing, outreach campaigns and audience targeting.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Marketing Operations</h3>
+
+                <p>
+                    CRM setup, analytics dashboards and campaign tracking.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Industries -->
+
+    <section>
+
+        <h2>Industries We Work With</h2>
+
+        <div class="industry-list">
+
+            <span>Manufacturing</span>
+
+            <span>Engineering</span>
+
+            <span>B2B Businesses</span>
+
+            <span>Industrial Services</span>
+
+        </div>
+
+    </section>
+
+    <!-- How We Work -->
+
+    <section>
+
+        <h2>How We Work</h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <h3>01</h3>
+
+                <p>Discovery Call</p>
+
+            </div>
+
+            <div class="step">
+
+                <h3>02</h3>
+
+                <p>Market Research</p>
+
+            </div>
+
+            <div class="step">
+
+                <h3>03</h3>
+
+                <p>Campaign Launch</p>
+
+            </div>
+
+            <div class="step">
+
+                <h3>04</h3>
+
+                <p>Optimization</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Case Studies -->
+
+    <section>
+
+        <h2>Case Studies</h2>
+
+        <div class="case-container">
+
+            <div class="card">
+
+                <h3>Cement Industry Strategy</h3>
+
+                <p>
+                    Multi-channel lead generation strategy using paid ads and outreach.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Marketing Automation</h3>
+
+                <p>
+                    Automated customer journeys and performance dashboards.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+
+    <section>
+
+        <h2>Testimonials</h2>
+
+        <div class="testimonial-container">
+
+            <div class="card">
+
+                <p>
+                    "Professional, data-driven and focused on measurable growth."
+                </p>
+
+                <br>
+
+                <strong>— Client Name</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section>
+
+        <h2>Let's Connect</h2>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <input type="text" placeholder="Company Name">
+
+            <textarea placeholder="Tell us about your project"></textarea>
+
+            <button class="submit-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Your Agency. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
