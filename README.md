@@ -1,2 +1,2 @@
-# rutuja-digital-marketing.github.io
+# rutuja-digital-marketing
 Helping businesses grow through performance marketing, lead generation, and data-driven strategies.
