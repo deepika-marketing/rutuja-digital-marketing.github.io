@@ -627,24 +627,13 @@
     font-size: 16px;
 }
 .nav-btn {
-
     background: #0f7a45;
-
     color: white;
-
-    border: none;
-
+    text-decoration: none;
     padding: 12px 24px;
-
     border-radius: 10px;
-
-    font-size: 16px;
-
     font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
+    display: inline-block;
 }
 
 .nav-btn:hover {
@@ -665,7 +654,11 @@
 
         <div class="nav-actions">
 
-    <button class="nav-btn">Book a Discovery Call</button>
+    <a href="https://calendar.app.google/9tjt77C3dFo5SJn96" target="_blank">
+    <button class="nav-btn">
+        Book a Discovery Call
+    </button>
+</a>
 
 </div>
 
@@ -731,7 +724,7 @@
 
         <div class="card">
             <h3>⚙️ Marketing Operations</h3>
-            <p>CRM management, reporting dashboards, automation, and campaign tracking.</p>
+            <p>Data management, reporting dashboards, automation, and campaign tracking.</p>
         </div>
 
         <div class="card">
@@ -935,25 +928,35 @@
 
     <section>
 
-        <h2>Contact Us</h2>
+    <h2>Contact Us</h2>
 
-        <form class="contact-form">
+    <form
+        class="contact-form"
+        action="https://formsubmit.co/marketer.rutuja@gmail.com"
+        method="POST">
 
-            <input type="text" placeholder="Your Name">
+        <input type="text" name="name" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Your Email">
+        <input type="email" name="email" placeholder="Your Email" required>
 
-            <input type="text" placeholder="Company Name">
+        <input type="text" name="company" placeholder="Company Name">
 
-            <textarea placeholder="Tell us about your project"></textarea>
+        <textarea
+            name="message"
+            placeholder="Tell us about your project"
+            required></textarea>
 
-            <button class="submit-btn">
-                Send Message
-            </button>
+        <input type="hidden" name="_subject" value="New Lead from Website">
 
-        </form>
+        <input type="hidden" name="_captcha" value="false">
 
-    </section>
+        <button class="submit-btn">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
 
     <footer>
 
