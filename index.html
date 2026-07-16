@@ -54,58 +54,122 @@
             font-weight: 500;
         }
 
-        /* HERO */
+        /* HERO SECTION */
 
-        .hero {
-            min-height: 90vh;
-            background: linear-gradient(135deg, #0f7a45, #34a853);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 10%;
-        }
+.hero {
 
-        .hero-content {
-            max-width: 850px;
-        }
+    min-height: 100vh;
 
-        .hero h1 {
-            font-size: 56px;
-            margin-bottom: 20px;
-        }
+    background: linear-gradient(135deg, #0f7a45, #34a853);
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+    color: white;
 
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+    display: flex;
 
-        .primary-btn {
-            background: white;
-            color: #0f7a45;
-            padding: 14px 28px;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+    align-items: center;
 
-        .secondary-btn {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-            padding: 14px 28px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 100px 8%;
+}
+
+.hero-text {
+
+    flex: 1;
+}
+
+.hero-text h1 {
+
+    font-size: 56px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.hero-image img {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    border-radius: 20px;
+
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 120px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .hero-image img {
+
+        max-width: 450px;
+    }
+}
 
         /* GENERAL */
 
@@ -449,31 +513,37 @@
 
     </nav>
 
-    <section class="hero">
+   <section class="hero">
 
-        <div class="hero-content">
+    <div class="hero-text">
 
-            <h1>Performance Marketing That Drives Real Revenue.</h1>
+        <h1>Helping Businesses Grow Through Smart Marketing</h1>
 
-            <p>
-                We help brands generate leads, improve visibility, and build scalable marketing systems.
-            </p>
+        <p>
+            We help brands generate leads, improve visibility, and build scalable marketing systems.
+        </p>
 
-            <div class="hero-buttons">
+        <div class="hero-buttons">
 
-                <button class="primary-btn">
-                    Book a Free Consultation
-                </button>
+            <button class="primary-btn">
+                Get Started
+            </button>
 
-                <button class="secondary-btn">
-                    View Our Work
-                </button>
-
-            </div>
+            <button class="secondary-btn">
+                View Portfolio
+            </button>
 
         </div>
 
-    </section>
+    </div>
+
+    <div class="hero-image">
+
+        <img src="hero-image.png" alt="Marketing Dashboard">
+
+    </div>
+
+</section>
 
     <section>
 
