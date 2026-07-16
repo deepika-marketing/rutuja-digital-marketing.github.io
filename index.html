@@ -133,13 +133,21 @@
 
         .card,
         .step {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            flex: 1;
-            min-width: 250px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: all 0.4s ease;
+    transform: translateY(0);
+}
+
+.step:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 35px rgba(15, 122, 69, 0.2);
+}
 
         .card h3,
         .step h3 {
@@ -211,6 +219,38 @@
             }
 
         }
+        @keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step {
+    animation: fadeUp 1s ease forwards;
+}
+
+.delay1 {
+    animation-delay: 0.2s;
+}
+
+.delay2 {
+    animation-delay: 0.5s;
+}
+
+.delay3 {
+    animation-delay: 0.8s;
+}
+
+.delay4 {
+    animation-delay: 1.1s;
+}
 
     </style>
 
@@ -238,7 +278,7 @@
 
         <div class="hero-content">
 
-            <h1>Helping Businesses Grow Through Smart Marketing</h1>
+            <h1>Performance Marketing That Drives Real Revenue.</h1>
 
             <p>
                 We help brands generate leads, improve visibility, and build scalable marketing systems.
@@ -247,11 +287,11 @@
             <div class="hero-buttons">
 
                 <button class="primary-btn">
-                    Get Started
+                    Book a Free Consultation
                 </button>
 
                 <button class="secondary-btn">
-                    View Portfolio
+                    View Our Work
                 </button>
 
             </div>
@@ -304,29 +344,31 @@
 
         <h2>How We Work</h2>
 
-        <div class="steps">
+        <h2>How We Work</h2>
 
-            <div class="step">
-                <h3>01</h3>
-                <p>Discovery Call</p>
-            </div>
+    <div class="steps">
 
-            <div class="step">
-                <h3>02</h3>
-                <p>Research & Planning</p>
-            </div>
-
-            <div class="step">
-                <h3>03</h3>
-                <p>Campaign Execution</p>
-            </div>
-
-            <div class="step">
-                <h3>04</h3>
-                <p>Optimization</p>
-            </div>
-
+        <div class="step delay1">
+            <h3>01</h3>
+            <p>Discovery Call</p>
         </div>
+
+        <div class="step delay2">
+            <h3>02</h3>
+            <p>Research & Planning</p>
+        </div>
+
+        <div class="step delay3">
+            <h3>03</h3>
+            <p>Campaign Execution</p>
+        </div>
+
+        <div class="step delay4">
+            <h3>04</h3>
+            <p>Optimization</p>
+        </div>
+
+    </div>
 
     </section>
 
