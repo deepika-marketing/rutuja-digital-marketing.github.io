@@ -238,7 +238,23 @@
         .service-container,
         .steps,
         .case-container,
-        .testimonial-container {
+        .testimonial-container
+        .service-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+@media (max-width: 900px) {
+
+    .service-container {
+
+        grid-template-columns: 1fr;
+    }
+}{
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
@@ -664,32 +680,47 @@
 
 </section>
 
-    <section>
+<section>
 
-        <h2>Our Services</h2>
+    <h2>Our Services</h2>
 
-        <div class="service-container">
+    <div class="service-container">
 
-            <div class="card">
-                <h3>Performance Marketing</h3>
-                <p>Google Ads, Meta Ads, LinkedIn campaigns and conversion optimization.</p>
-            </div>
-
-            <div class="card">
-                <h3>Lead Generation</h3>
-                <p>Email marketing, prospect research and outreach campaigns.</p>
-            </div>
-
-            <div class="card">
-                <h3>Marketing Operations</h3>
-                <p>CRM management, reporting dashboards and automation.</p>
-            </div>
-
+        <div class="card">
+            <h3>🎯 Performance Marketing</h3>
+            <p>Google Ads, Meta Ads, LinkedIn campaigns, remarketing, and conversion optimization.</p>
         </div>
 
-    </section>
+        <div class="card">
+            <h3>📈 Lead Generation</h3>
+            <p>Targeted prospect research, email outreach, and qualified lead generation campaigns.</p>
+        </div>
 
-    <section>
+        <div class="card">
+            <h3>✉️ Email Marketing</h3>
+            <p>Newsletters, automated workflows, lead nurturing, and customer engagement strategies.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Social Media Marketing</h3>
+            <p>LinkedIn management, content creation, post scheduling, and audience growth.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Marketing Operations</h3>
+            <p>CRM management, reporting dashboards, automation, and campaign tracking.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Market Research & Strategy</h3>
+            <p>Competitor analysis, customer research, positioning, and growth planning.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
 
         <h2>Industries We Work With</h2>
 
@@ -852,7 +883,7 @@
 
         <div class="stat-card">
             <h3>💬 Engagement</h3>
-            <p>Improved engagement rate from <strong>25%-30%</strong> to <strong>Y%</strong>.</p>
+            <p>Improved engagement rate from <strong>25%-30%</strong>.</p>
         </div>
 
         <div class="stat-card">
